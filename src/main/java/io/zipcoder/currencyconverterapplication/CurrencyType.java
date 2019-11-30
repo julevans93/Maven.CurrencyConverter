@@ -17,14 +17,17 @@ public enum CurrencyType {
     private final double rate;
 
     CurrencyType(double rate) {
+
         this.rate = rate;
     }
 
     public Double getRate() {
+
         return rate;
     }
 
     public static CurrencyType getTypeOfCurrency(ConvertableCurrency currency) {
-        return null;
+
+        return currency.getType();
     }
 }
